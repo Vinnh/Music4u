@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#a86705c7, #a241d688),url(imagens/2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/*----------- tela inicial -----------*/
+
+/* barra superior */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 7%;
+}
+
+/* logo */
+.logo{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* titulo */
+
+.name{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* conteúdo da tela */
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/* titulo principal */
+
+.title {
+    color: #fff;
+    font-size: 60px;
+    line-height: 70px;
+}
+
+/* imagem */
+
+.image img {
+    width: 90%;
+    height: 90%;
+    border: 10px solid #a241d688;
+    border-radius: 50%;
+}
+
+/* botões */
+
+.buttons a {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px 45px;
+    margin-top: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid transparent ;
+    background: rgb(212, 8, 219);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.buttons .btn-2 {
+    background-color: #a241d688;
+}
+
+.buttons .btn-1:hover {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.buttons .btn-2:hover {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+/*----------- tela inicial responsividade -----------*/
+
+@media screen and (max-width: 500px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+}
